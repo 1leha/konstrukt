@@ -2,44 +2,20 @@
 .button {
   cursor: pointer;
   display: inline-block;
-  min-width: 130px;
-  padding: 13px 27px;
+  width: 150px;
+  padding: 11px;
 
-  @include font(14, 16, 400, 0.05);
+  @include font(13, 15, 700, 0);
+  text-align: center;
 
   background-color: var(--color-brand);
   color: var(--color-white);
-  border-radius: 40px;
-  border: 2px solid var(--color-brand);
 
-  @include projTransitions((color, background, box-shadow));
+  @include projTransitions(background);
 
   /* События кнопок */
   &:hover,
   &:focus {
-    color: var(--color-primary);
-    background-color: var(--color-white);
-  }
-
-  &--bordered-red {
-    color: var(--color-primary);
-    background-color: var(--color-white);
-    border: solid 2px var(--color-brand);
-    &:hover,
-    &:focus {
-      color: var(--color-white);
-      background-color: var(--color-brand);
-    }
-  }
-
-  &--bordered-white {
-    color: var(--color-white);
-    background-color: var(--color-brand);
-    border: solid 2px var(--color-white);
-    &:hover,
-    &:focus {
-      color: var(--color-brand);
-      background-color: var(--color-white);
-    }
+    background-color: var(--color-accent);
   }
 }
