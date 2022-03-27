@@ -1,0 +1,42 @@
+.header {
+  max-width: 1920px;
+  height: 769px;
+
+  padding-top: 41px;
+  padding-bottom: 71px;
+
+  text-align: center;
+
+  background-image: url('../../img/hero-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include pixelRatio() {
+    background-image: url('../../img/hero-bg@2x.jpg');
+  }
+}
+
+.header__logo {
+  margin-bottom: 318px;
+}
+
+.header__title {
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  @include font(60, 70, 700, 0.092);
+
+  color: var(--color-white);
+}
+
+.header__text {
+  margin-bottom: 221px;
+  @include font(16, 19, 400, 0);
+
+  color: var(--color-white);
+
+  &--bottom {
+    text-transform: uppercase;
+    @include font(16, 19, 400, 0);
+  }
+}

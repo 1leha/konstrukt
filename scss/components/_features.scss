@@ -1,0 +1,52 @@
+.features {
+  @include flexAlign($justify: flex-start);
+  flex-shrink: 0;
+}
+
+.features__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.features__link {
+  display: block;
+  position: relative;
+
+  @include projTransitions(background-color transform);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0);
+
+    & .features__title {
+      transform: translateY(70%);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.features__title {
+  position: absolute;
+  display: inline-block;
+
+  width: 100%;
+  padding: 15px;
+
+  @include font(24, 29, 700, 0.05);
+
+  top: 0;
+  left: 0;
+
+  color: var(--color-white);
+  @include projTransitions(background-color color);
+}

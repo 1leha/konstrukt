@@ -1,0 +1,45 @@
+.title {
+  font-family: var(--primary-font);
+  @include font(24, 28, 700, 0);
+  text-align: left;
+
+  color: var(--color-primary);
+}
+
+.section-title {
+  @include font(18, 21, 700, 0.12);
+  text-align: left;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    left: 0;
+    top: 100%;
+
+    transform: translateY(10px);
+
+    background-color: var(--color-brand);
+  }
+
+  &--centered {
+    // margin: 0 auto;
+    text-align: center;
+
+    &::after {
+      content: '';
+      // display: block;
+      width: 50px;
+      height: 2px;
+      left: 50%;
+      top: 100%;
+
+      transform: translate(-50%, 10px);
+
+      background-color: var(--color-brand);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.footer-categories {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  border-bottom: 1px solid var(--color-third);
+}
+
+.footer-categories__list {
+  @include flexAlign($justify: space-between);
+}
+
+.footer-contacts {
+  padding-top: 38px;
+  padding-bottom: 38px;
+
+  @include flexAlign();
+}
+
+.footer-contacts__social {
+  margin-right: auto;
+}
+
+.footer-contacts__address {
+  margin-right: 105px;
+
+  @include font(14, 16, 400, 0);
+  color: var(--color-primary);
+}
+
+.footer-legals {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--color-third);
+}
+
+.footer-legals__container {
+  @include flexAlign($justify: space-between);
+}
+
+.footer-legals__link {
+  @include font(12, 14, 400, 0);
+
+  color: var(--color-fourth);
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+}

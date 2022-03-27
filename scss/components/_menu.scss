@@ -1,0 +1,11 @@
+.menu {
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.menu__container {
+  @include flexAlign($justify: space-between);
+}
+
+.menu__logo {
+  color: var(--color-black);
+}

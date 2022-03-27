@@ -1,0 +1,32 @@
+.navigation__list {
+  @include flexAlign();
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    margin-right: 48px;
+  }
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  @include font(12, 14, 600, 0.02);
+
+  color: var(--color-primary);
+
+  @include projTransitions(color);
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+
+  &--active {
+      @include font(12, 14, 700, 0.02);
+
+    color: var(--color-accent);
+  }
+}

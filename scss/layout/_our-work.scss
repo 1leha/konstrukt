@@ -1,0 +1,11 @@
+.our-work {
+  @include flexAlign($align: flex-end, $justify: space-between);
+}
+
+.our-work__info {
+  max-width: 405px;
+}
+
+.our-work__bold-text {
+  margin-bottom: 30px;
+}

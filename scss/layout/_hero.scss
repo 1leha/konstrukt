@@ -1,0 +1,46 @@
+.hero {
+  max-width: 1920px;
+  height: 604px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 192px;
+  padding-bottom: 192px;
+
+  text-align: center;
+  color: var(--color-white);
+
+  background-color: var(--color-brand);
+  background-image: url('../img/hero-bg.jpg');
+  background-position: center, center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include pixelRatio {
+    background-image: url('../img/hero-bg@2x.jpg');
+  }
+}
+
+.hero__wrapper {
+  width: 310px;
+  text-align: left;
+}
+
+.hero__title,
+.hero__text {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.hero__title {
+  @include font(48, 56, 700, 0);
+  color: var(--color-white);
+}
+
+.hero__text {
+  color: var(--color-white);
+}
+
+.hero__button {
+  min-width: 170px;
+}
