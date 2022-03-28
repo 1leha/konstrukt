@@ -1,49 +1,100 @@
-.footer-categories {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.footer {
+  padding-top: 42px;
+  padding-bottom: 42px;
 
-  border-bottom: 1px solid var(--color-third);
+  color: var(--color-white);
+  background-color: var(--color-fourth);
 }
 
-.footer-categories__list {
-  @include flexAlign($justify: space-between);
+.footer__container {
+  @include flexAlign($align: flex-start, $justify: flex-start);
 }
 
-.footer-contacts {
-  padding-top: 38px;
-  padding-bottom: 38px;
-
-  @include flexAlign();
+.footer__about {
+  width: 250px;
+  margin-right: 71px;
 }
 
-.footer-contacts__social {
-  margin-right: auto;
+.footer__title {
+  margin-bottom: 20px;
+
+  @include font(11, 13, 400, 0.08);
 }
 
-.footer-contacts__address {
-  margin-right: 105px;
-
-  @include font(14, 16, 400, 0);
-  color: var(--color-primary);
+.footer__logo {
+  margin-bottom: 15px;
 }
 
-.footer-legals {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: var(--color-third);
+.footer__text {
+  @include font(11, 19, 400, 0.08);
 }
 
-.footer-legals__container {
-  @include flexAlign($justify: space-between);
+.footer-menu__wrapper {
+  @include flexAlign($align: flex-start, $justify: flex-start);
+
+  margin-right: 58px;
 }
 
-.footer-legals__link {
-  @include font(12, 14, 400, 0);
+.footer-menu__list {
+  &:not(:last-child) {
+    margin-right: 34px;
+  }
 
-  color: var(--color-fourth);
+  flex-shrink: 0;
+}
+
+.footer-menu__item {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.footer-menu__link {
+  display: block;
+
+  @include font(11, 12, 400, 0.08);
+
+  color: var(--color-white);
+
+  @include projTransitions(color);
 
   &:hover,
   &:focus {
-    color: var(--color-accent);
+    color: var(--color-brand);
   }
+}
+
+.footer__contacts {
+  width: 120px;
+  // margin-right: auto;
+}
+
+.footer__address {
+  display: block;
+  @include font(11, 16, 400, 0.08);
+  margin-top: -3px;
+  margin-bottom: 15px;
+}
+
+.footer__link {
+  display: inline-block;
+  @include font(11, 16, 400, 0.08);
+  color: var(--color-white);
+
+  @include projTransitions(color);
+
+  &--margin {
+    margin-bottom: 15px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
+}
+
+.footer__social {
+  margin-top: 35px;
+  margin-right: auto;
+  margin-left: auto;
 }

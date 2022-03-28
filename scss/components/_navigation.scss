@@ -21,12 +21,12 @@
 
   &:hover,
   &:focus {
-    color: var(--color-accent);
+    color: var(--color-brand);
   }
 
   &--active {
       @include font(12, 14, 700, 0.02);
 
-    color: var(--color-accent);
+    color: var(--color-brand);
   }
 }

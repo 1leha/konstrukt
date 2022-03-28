@@ -1,0 +1,10 @@
+.legal {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  text-align: center;
+
+  @include font(11, 13, 400, 0.08);
+
+  color: var(--color-white);
+  background-color: var(--color-third);
+}

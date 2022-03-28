@@ -1,16 +1,17 @@
 .input {
-  @include font(14, 16, 400, 0);
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+
+  @include font(14, 16, 400, 0.01);
   color: var(--color-primary);
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 
   border: none;
-  border-radius: 40px;
-  background-color: var(--color-third);
+  outline: none;
 
-  &:focus {
-    outline: none;
-  }
+  background-color: var(--color-white);
 }

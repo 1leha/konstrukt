@@ -1,0 +1,25 @@
+.get-in-touch {
+  padding-top: 120px;
+  padding-bottom: 231px;
+
+  max-width: 100vw;
+  height: 499px;
+
+  text-align: center;
+
+  background-color: var(--color-fifth);
+  background-image: url(../../img/bottom-hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include pixelRatio {
+    background-image: url(../../img/bottom-hero-bg@2x.jpg);
+  }
+}
+
+.get-in-touch__title {
+  margin-bottom: 35px;
+
+  @include font(30, 36, 700, 0.015);
+}

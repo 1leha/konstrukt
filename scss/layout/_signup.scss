@@ -1,0 +1,22 @@
+.signup {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: var(--color-third);
+}
+
+.signup__container {
+  @include flexAlign();
+}
+
+.signup__form {
+  @include flexAlign();
+}
+
+.signup__title {
+  display: inline-block;
+  margin-right: 70px;
+  @include font(22, 26, 700, 0.04);
+
+  color: var(--color-white);
+}

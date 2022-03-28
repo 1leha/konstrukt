@@ -23,12 +23,14 @@
     <header class="header">
       <div class="container">
         <a href="" class="logo header__logo">
-          <svg class="logo__image" width="102" height="23">
+          <svg class="logo__image" width="102" height="23" aria-label="Comany logo">
             <use href="./img/icons.svg#projeco-logo"></use>
           </svg>
         </a>
-        <h1 class="header__title">PARTNER WITH KONSTUCT</h1>
-        <p class="header__text">An award-winning construction management firm</p>
+        <div class="header__title-box">
+          <h1 class="header__title">PARTNER WITH KONSTUCT</h1>
+          <p class="header__text">An award-winning construction management firm</p>
+        </div>
         <p class="header__text header__text--bottom">SCROLL DOWN</p>
       </div>
     </header>
@@ -37,7 +39,7 @@
       <div class="menu">
         <div class="container menu__container">
           <a href="" class="logo menu__logo">
-            <svg class="logo__image" width="80" height="18">
+            <svg class="logo__image" width="80" height="18" aria-label="Comany logo">
               <use href="./img/icons.svg#projeco-logo"></use>
             </svg>
           </a>
@@ -84,21 +86,36 @@
             <ul class="our-work__features features">
               <li class="features__item">
                 <a href="" class="features__link">
-                  <img class="features__image" src="./img/plan.jpg" alt="WE PLAN" />
+                  <img
+                    class="features__image"
+                    srcset="./img/plan.jpg 1x, ./img/plan@2x.jpg 2x"
+                    src="./img/plan.jpg"
+                    alt="WE PLAN"
+                  />
                   <span class="features__title">WE PLAN</span>
                 </a>
               </li>
 
               <li class="features__item">
                 <a href="" class="features__link">
-                  <img class="features__image" src="./img/manage.jpg" alt="WE MANAGE" />
+                  <img
+                    class="features__image"
+                    srcset="./img/manage.jpg 1x, ./img/manage@2x.jpg 2x"
+                    src="./img/manage.jpg"
+                    alt="WE MANAGE"
+                  />
                   <span class="features__title">WE MANAGE</span>
                 </a>
               </li>
 
               <li class="features__item">
                 <a href="" class="features__link">
-                  <img class="features__image" src="./img/build.jpg" alt="WE BUILD" />
+                  <img
+                    class="features__image"
+                    srcset="./img/build.jpg 1x, ./img/build@2x.jpg 2x"
+                    src="./img/build.jpg"
+                    alt="WE BUILD"
+                  />
                   <span class="features__title">WE BUILD</span>
                 </a>
               </li>
@@ -122,7 +139,7 @@
             <li class="capabilities__item">
               <a href="" class="capabilities__link">
                 <img
-                  srcset="./img/management-icon.png 1x. ./img/management-icon@2 2x.png"
+                  srcset="./img/management-icon.png 1x, ./img/management-icon@2x.png 2x"
                   src="./img/management-icon.png"
                   alt=""
                   class="capabilities__image"
@@ -138,7 +155,7 @@
             <li class="capabilities__item">
               <a href="" class="capabilities__link">
                 <img
-                  srcset="./img/management-icon.png 1x. ./img/management-icon@2 2x.png"
+                  srcset="./img/management-icon.png 1x, ./img/management-icon@2x.png 2x"
                   src="./img/management-icon.png"
                   alt=""
                   class="capabilities__image"
@@ -154,7 +171,7 @@
             <li class="capabilities__item">
               <a href="" class="capabilities__link">
                 <img
-                  srcset="./img/management-icon.png 1x. ./img/management-icon@2 2x.png"
+                  srcset="./img/management-icon.png 1x, ./img/management-icon@2x.png 2x"
                   src="./img/management-icon.png"
                   alt=""
                   class="capabilities__image"
@@ -169,8 +186,128 @@
           </ul>
         </div>
       </section>
+
+      <section class="get-in-touch">
+        <div class="container">
+          <h2 class="get-in-touch__title">Want to build<br />something amazing?</h2>
+          <button class="button">GET IN TOUCH</button>
+        </div>
+      </section>
+
+      <section class="signup">
+        <div class="container signup__container">
+          <h2 class="signup__title">Newsletter Signup</h2>
+          <form class="signup__form form">
+            <input
+              class="signup__input input"
+              name="email"
+              type="email"
+              placeholder="test@youremail.com"
+            />
+            <button class="signup__button button">SIGNUP</button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__about">
+          <h2 class="footer__title">COMPANY</h2>
+          <a href="" class="footer__logo logo">
+            <svg class="logo__image" width="102" height="22" aria-label="Comany logo">
+              <use href="./img/icons.svg#projeco-logo"></use>
+            </svg>
+          </a>
+          <p class="footer__text">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+            tincidunt ut laoreet dolore magna aliquam erat.
+          </p>
+        </div>
+
+        <div class="footer__menu footer-menu">
+          <h2 class="footer__title">LINKS</h2>
+          <div class="footer-menu__wrapper">
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">HOME</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">ABOUT</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">SERVICES</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">PROJECT</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">CONTACT US</a>
+              </li>
+            </ul>
+
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">FAQ</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">TERMS</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">CAREERS</a>
+              </li>
+            </ul>
+
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">BLOG</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">PARTNERS</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="" class="footer-menu__link">NEWS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__contacts">
+          <h2 class="footer__title">CONTACT US</h2>
+          <address class="footer__address">
+            213 Baker Street Oriel City Kounty 7000 KNW, Country Name
+          </address>
+          <a href="tel:+239942334022" class="footer__link footer__link--margin">+23 994 233 4022</a>
+          <a href="mailto:nfo@konstruct.com" class="footer__link">nfo@konstruct.com</a>
+        </div>
+
+        <div class="footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg width="12" height="12">
+                  <use href="./img/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg width="12" height="12">
+                  <use href="./img/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg width="12" height="12">
+                  <use href="./img/icons.svg#google"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <p class="legal">© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
   </body>
 </html>

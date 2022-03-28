@@ -8,6 +8,6 @@
   @include font(21, 31, 700, 0.03);
 
   &--colored {
-    color: var(--color-accent);
+    color: var(--color-brand);
   }
 }
