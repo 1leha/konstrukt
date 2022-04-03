@@ -421,7 +421,7 @@ address {
   padding-bottom: 71px;
   text-align: center;
   background-color: var(--color-fifth);
-  background-image: url("../../img/hero-bg.jpg");
+  background-image: url("./img/hero-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -429,7 +429,7 @@ address {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header {
-    background-image: url("../../img/hero-bg@2x.jpg");
+    background-image: url("./img/hero-bg@2x.jpg");
   }
 }
 
