@@ -599,7 +599,7 @@ address {
   height: 499px;
   text-align: center;
   background-color: var(--color-fifth);
-  background-image: url(../../img/bottom-hero-bg.jpg);
+  background-image: url("../img/bottom-hero-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -607,7 +607,7 @@ address {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .get-in-touch {
-    background-image: url(../../img/bottom-hero-bg@2x.jpg);
+    background-image: url("../img/bottom-hero-bg@2x.jpg");
   }
 }
 
