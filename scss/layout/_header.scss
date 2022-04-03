@@ -10,13 +10,13 @@
   text-align: center;
 
   background-color: var(--color-fifth);
-  background-image: url('./img/hero-bg.jpg');
+  background-image: url('../img/hero-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   @include pixelRatio() {
-    background-image: url('./img/hero-bg@2x.jpg');
+    background-image: url('../img/hero-bg@2x.jpg');
   }
 }
 
